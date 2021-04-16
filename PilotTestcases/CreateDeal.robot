@@ -8,8 +8,7 @@ Default Tags
 
 
 *** Test Cases ***
-
-1. Start with deal creation
+3. Start with deal creation
    Given I am on Deals Page
    When I am Creating a Test Deal
    Then Deal is created Successfully
