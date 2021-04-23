@@ -1,3 +1,7 @@
+#from selenium import webdriver
+#from selenium.webdriver.common.keys import Keys
+
+
 _author_ = 'Shiva_Vetukuri'
 
 deals_Nav_Link = 'css:a[href="/deals"]'
@@ -18,5 +22,11 @@ dealName_X = '//input[@data-test-id="deal-name"] '
 dealEmail_No_X = '//div[@data-test-id="use-deal-email-no"]'
 setUpTeam_X = '//button[@data-test-id="setup-your-team"]'
 wgl_X = 'xpath://a[text()="Working Group List"]'
+
+
+#driver=webdriver.Chrome(executable_path="C:\Drivers\chromedriver.exe")
+#driver.get("https://app.succulent2.eupheme.tech/sign_in")
+
+
 
 

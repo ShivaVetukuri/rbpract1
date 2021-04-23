@@ -1,247 +1,247 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0.1 (Python 3.9.4 on win32)" generated="20210416 18:52:14.445" rpa="false" schemaversion="2">
+<robot generator="Robot 4.0.1 (Python 3.9.4 on win32)" generated="20210419 11:52:07.900" rpa="false" schemaversion="2">
 <suite id="s1" name="CreateDeal" source="C:\Users\LENOVO\PycharmProjects\Rb repository\rbpract1\PilotTestcases\CreateDeal.robot">
+<test id="s1-t1" name="3. Start with deal creation">
 <kw name="Before Suite" library="HomePageKeywords" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210416 18:52:15.660" level="INFO">Opening browser 'chrome' to base url 'https://app.succulent2.eupheme.tech/sign_in'.</msg>
-<status status="PASS" starttime="20210416 18:52:15.660" endtime="20210416 18:52:26.099"/>
+<msg timestamp="20210419 11:52:08.447" level="INFO">Opening browser 'chrome' to base url 'https://app.succulent2.eupheme.tech/sign_in'.</msg>
+<status status="PASS" starttime="20210419 11:52:08.447" endtime="20210419 11:52:16.558"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210416 18:52:26.099" endtime="20210416 18:52:30.544"/>
+<status status="PASS" starttime="20210419 11:52:16.558" endtime="20210419 11:52:20.869"/>
 </kw>
 <kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
 <arg>${wait}</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20210416 18:52:30.544" endtime="20210416 18:52:30.547"/>
+<status status="PASS" starttime="20210419 11:52:20.870" endtime="20210419 11:52:20.874"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${userName_X}</arg>
 <arg>${UserName}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210416 18:52:30.547" level="INFO">Typing text 'shiva.vetukuri@qualitlabs.com' into text field 'xpath://input[@id='input-email']'.</msg>
-<status status="PASS" starttime="20210416 18:52:30.547" endtime="20210416 18:52:31.398"/>
+<msg timestamp="20210419 11:52:20.875" level="INFO">Typing text 'shiva.vetukuri@qualitlabs.com' into text field 'xpath://input[@id='input-email']'.</msg>
+<status status="PASS" starttime="20210419 11:52:20.874" endtime="20210419 11:52:21.697"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${password_X}</arg>
 <arg>${Password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210416 18:52:31.398" level="INFO">Typing text 'QualiT@7890' into text field 'xpath://input[@id='input-password']'.</msg>
-<status status="PASS" starttime="20210416 18:52:31.398" endtime="20210416 18:52:31.941"/>
+<msg timestamp="20210419 11:52:21.698" level="INFO">Typing text 'QualiT@7890' into text field 'xpath://input[@id='input-password']'.</msg>
+<status status="PASS" starttime="20210419 11:52:21.697" endtime="20210419 11:52:21.972"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${signIn_X}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210416 18:52:31.941" level="INFO">Clicking element 'xpath://input[@type='submit']'.</msg>
-<status status="PASS" starttime="20210416 18:52:31.941" endtime="20210416 18:52:38.102"/>
+<msg timestamp="20210419 11:52:21.973" level="INFO">Clicking element 'xpath://input[@type='submit']'.</msg>
+<status status="PASS" starttime="20210419 11:52:21.972" endtime="20210419 11:52:27.806"/>
 </kw>
-<status status="PASS" starttime="20210416 18:52:15.652" endtime="20210416 18:52:38.106"/>
+<status status="PASS" starttime="20210419 11:52:08.447" endtime="20210419 11:52:27.806"/>
 </kw>
-<test id="s1-t1" name="1. Start with deal creation">
 <kw name="Given I am on Deals Page" library="HomePageKeywords">
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${deals_Nav_Link}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20210416 18:52:38.112" level="INFO">Clicking link 'css:a[href="/deals"]'.</msg>
-<status status="PASS" starttime="20210416 18:52:38.112" endtime="20210416 18:52:38.531"/>
+<msg timestamp="20210419 11:52:27.810" level="INFO">Clicking link 'css:a[href="/deals"]'.</msg>
+<status status="PASS" starttime="20210419 11:52:27.809" endtime="20210419 11:52:27.933"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${dealsTitle_X}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20210416 18:52:39.269" level="INFO">Element '//h3[text()="Deals"]' is displayed.</msg>
-<status status="PASS" starttime="20210416 18:52:38.531" endtime="20210416 18:52:39.269"/>
+<msg timestamp="20210419 11:52:28.418" level="INFO">Element '//h3[text()="Deals"]' is displayed.</msg>
+<status status="PASS" starttime="20210419 11:52:27.933" endtime="20210419 11:52:28.419"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${dealList_X}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20210416 18:52:39.380" level="INFO">Element '//div[@data-test-id="deals-list-container"]' is displayed.</msg>
-<status status="PASS" starttime="20210416 18:52:39.269" endtime="20210416 18:52:39.380"/>
+<msg timestamp="20210419 11:52:28.463" level="INFO">Element '//div[@data-test-id="deals-list-container"]' is displayed.</msg>
+<status status="PASS" starttime="20210419 11:52:28.419" endtime="20210419 11:52:28.463"/>
 </kw>
-<status status="PASS" starttime="20210416 18:52:38.110" endtime="20210416 18:52:39.380"/>
+<status status="PASS" starttime="20210419 11:52:27.808" endtime="20210419 11:52:28.463"/>
 </kw>
 <kw name="When I am Creating a Test Deal" library="CreateDealKeywords">
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${deals_Nav_Link}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20210416 18:52:39.386" level="INFO">Clicking link 'css:a[href="/deals"]'.</msg>
-<status status="PASS" starttime="20210416 18:52:39.380" endtime="20210416 18:52:39.583"/>
+<msg timestamp="20210419 11:52:28.466" level="INFO">Clicking link 'css:a[href="/deals"]'.</msg>
+<status status="PASS" starttime="20210419 11:52:28.466" endtime="20210419 11:52:28.580"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${dealsTitle_X}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20210416 18:52:39.644" level="INFO">Element '//h3[text()="Deals"]' is displayed.</msg>
-<status status="PASS" starttime="20210416 18:52:39.583" endtime="20210416 18:52:39.644"/>
+<msg timestamp="20210419 11:52:28.611" level="INFO">Element '//h3[text()="Deals"]' is displayed.</msg>
+<status status="PASS" starttime="20210419 11:52:28.580" endtime="20210419 11:52:28.611"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${dealList_X}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20210416 18:52:39.728" level="INFO">Element '//div[@data-test-id="deals-list-container"]' is displayed.</msg>
-<status status="PASS" starttime="20210416 18:52:39.644" endtime="20210416 18:52:39.728"/>
+<msg timestamp="20210419 11:52:28.646" level="INFO">Element '//div[@data-test-id="deals-list-container"]' is displayed.</msg>
+<status status="PASS" starttime="20210419 11:52:28.611" endtime="20210419 11:52:28.646"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210416 18:52:43.744" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20210416 18:52:39.728" endtime="20210416 18:52:43.744"/>
+<msg timestamp="20210419 11:52:32.661" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20210419 11:52:28.646" endtime="20210419 11:52:32.661"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${createDeal_X}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210416 18:52:43.744" level="INFO">Clicking element '//a[text()="Create Deal"]'.</msg>
-<status status="PASS" starttime="20210416 18:52:43.744" endtime="20210416 18:52:43.992"/>
+<msg timestamp="20210419 11:52:32.661" level="INFO">Clicking element '//a[text()="Create Deal"]'.</msg>
+<status status="PASS" starttime="20210419 11:52:32.661" endtime="20210419 11:52:32.766"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${createByType_X}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210416 18:52:43.992" level="INFO">Clicking element '//*[@data-test-id="start-with-template"]'.</msg>
-<status status="PASS" starttime="20210416 18:52:43.992" endtime="20210416 18:52:45.840"/>
+<msg timestamp="20210419 11:52:32.767" level="INFO">Clicking element '//*[@data-test-id="start-with-template"]'.</msg>
+<status status="PASS" starttime="20210419 11:52:32.766" endtime="20210419 11:52:33.850"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${selectDealType_X}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210416 18:52:45.840" level="INFO">Clicking element '//div[@data-test-id="deal-type-5"]'.</msg>
-<status status="PASS" starttime="20210416 18:52:45.840" endtime="20210416 18:52:46.288"/>
+<msg timestamp="20210419 11:52:33.851" level="INFO">Clicking element '//div[@data-test-id="deal-type-5"]'.</msg>
+<status status="PASS" starttime="20210419 11:52:33.851" endtime="20210419 11:52:34.046"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${searchTemplate_X}</arg>
 <arg>${template}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210416 18:52:46.288" level="INFO">Typing text 'Blank Data Room' into text field '//input[@placeholder="Search Templates"]'.</msg>
-<status status="PASS" starttime="20210416 18:52:46.288" endtime="20210416 18:52:48.964"/>
+<msg timestamp="20210419 11:52:34.048" level="INFO">Typing text 'Blank Data Room' into text field '//input[@placeholder="Search Templates"]'.</msg>
+<status status="PASS" starttime="20210419 11:52:34.046" endtime="20210419 11:52:35.347"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${selectTemplate_X}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210416 18:52:48.965" level="INFO">Clicking element '//h3[text()="Blank Data Room"]'.</msg>
-<status status="PASS" starttime="20210416 18:52:48.964" endtime="20210416 18:52:49.294"/>
+<msg timestamp="20210419 11:52:35.348" level="INFO">Clicking element '//h3[text()="Blank Data Room"]'.</msg>
+<status status="PASS" starttime="20210419 11:52:35.347" endtime="20210419 11:52:35.503"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${dataRoom_Yes_X}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210416 18:52:49.295" level="INFO">Clicking element '//button[@data-test-id="include-data-room-button-yes"]'.</msg>
-<status status="PASS" starttime="20210416 18:52:49.294" endtime="20210416 18:52:49.479"/>
+<msg timestamp="20210419 11:52:35.505" level="INFO">Clicking element '//button[@data-test-id="include-data-room-button-yes"]'.</msg>
+<status status="PASS" starttime="20210419 11:52:35.504" endtime="20210419 11:52:35.609"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${votingThreshold_Yes_X}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210416 18:52:49.480" level="INFO">Clicking element '//button[@data-test-id="use-voting-threshold-button-yes"]'.</msg>
-<status status="PASS" starttime="20210416 18:52:49.480" endtime="20210416 18:52:49.797"/>
+<msg timestamp="20210419 11:52:35.611" level="INFO">Clicking element '//button[@data-test-id="use-voting-threshold-button-yes"]'.</msg>
+<status status="PASS" starttime="20210419 11:52:35.610" endtime="20210419 11:52:35.760"/>
 </kw>
 <kw name="Skip If" library="BuiltIn">
 <arg>${mercuryCompliance_No_X}</arg>
 <doc>Skips the rest of the current test if the ``condition`` is True.</doc>
-<msg timestamp="20210416 18:52:49.798" level="FAIL">Evaluating expression '//span[text()="No"]' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</msg>
-<status status="FAIL" starttime="20210416 18:52:49.797" endtime="20210416 18:52:49.798"/>
+<msg timestamp="20210419 11:52:35.761" level="FAIL">Evaluating expression '//span[text()="No"]' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</msg>
+<status status="FAIL" starttime="20210419 11:52:35.760" endtime="20210419 11:52:35.761"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${mercuryCompliance_No_X}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20210416 18:52:49.799" endtime="20210416 18:52:49.799"/>
+<status status="NOT RUN" starttime="20210419 11:52:35.762" endtime="20210419 11:52:35.762"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${next_X)</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20210416 18:52:49.799" endtime="20210416 18:52:49.799"/>
+<status status="NOT RUN" starttime="20210419 11:52:35.762" endtime="20210419 11:52:35.762"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${testDeal_Yes_X}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20210416 18:52:49.800" endtime="20210416 18:52:49.800"/>
+<status status="NOT RUN" starttime="20210419 11:52:35.762" endtime="20210419 11:52:35.763"/>
 </kw>
 <kw name="Generate Random String" library="String">
 <var>${randeal}</var>
 <arg>8</arg>
 <arg>[NUMBERS]</arg>
 <doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
-<status status="NOT RUN" starttime="20210416 18:52:49.800" endtime="20210416 18:52:49.800"/>
+<status status="NOT RUN" starttime="20210419 11:52:35.763" endtime="20210419 11:52:35.763"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${dealName_X}</arg>
 <arg>Dealno${randeal}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20210416 18:52:49.801" endtime="20210416 18:52:49.801"/>
+<status status="NOT RUN" starttime="20210419 11:52:35.763" endtime="20210419 11:52:35.763"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${random}</arg>
 <arg>Dealno${randeal}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<status status="NOT RUN" starttime="20210416 18:52:49.801" endtime="20210416 18:52:49.801"/>
+<status status="NOT RUN" starttime="20210419 11:52:35.764" endtime="20210419 11:52:35.764"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${next_X}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20210416 18:52:49.802" endtime="20210416 18:52:49.802"/>
+<status status="NOT RUN" starttime="20210419 11:52:35.764" endtime="20210419 11:52:35.764"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${dealEmail_No_X}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20210416 18:52:49.802" endtime="20210416 18:52:49.802"/>
+<status status="NOT RUN" starttime="20210419 11:52:35.765" endtime="20210419 11:52:35.765"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${next_X}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20210416 18:52:49.802" endtime="20210416 18:52:49.803"/>
+<status status="NOT RUN" starttime="20210419 11:52:35.765" endtime="20210419 11:52:35.765"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${setUpTeam_X}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20210416 18:52:49.803" endtime="20210416 18:52:49.803"/>
+<status status="NOT RUN" starttime="20210419 11:52:35.765" endtime="20210419 11:52:35.765"/>
 </kw>
-<status status="FAIL" starttime="20210416 18:52:39.380" endtime="20210416 18:52:49.803"/>
+<status status="FAIL" starttime="20210419 11:52:28.465" endtime="20210419 11:52:35.766"/>
 </kw>
 <kw name="Then Deal is created Successfully" library="CreateDealKeywords">
-<status status="NOT RUN" starttime="20210416 18:52:49.806" endtime="20210416 18:52:49.806"/>
+<status status="NOT RUN" starttime="20210419 11:52:35.774" endtime="20210419 11:52:35.774"/>
 </kw>
 <kw name="And Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" starttime="20210416 18:52:49.815" endtime="20210416 18:52:49.815"/>
+<status status="NOT RUN" starttime="20210419 11:52:35.776" endtime="20210419 11:52:35.776"/>
 </kw>
-<status status="FAIL" starttime="20210416 18:52:38.106" endtime="20210416 18:52:49.819">Evaluating expression '//span[text()="No"]' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
+<status status="FAIL" starttime="20210419 11:52:08.431" endtime="20210419 11:52:35.777">Evaluating expression '//span[text()="No"]' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
 </test>
 <test id="s1-t2" name="2. Delete Deal">
 <kw name="Given I am on Deals Page" library="HomePageKeywords">
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${deals_Nav_Link}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20210416 18:52:49.828" level="INFO">Clicking link 'css:a[href="/deals"]'.</msg>
+<msg timestamp="20210419 11:52:35.782" level="INFO">Clicking link 'css:a[href="/deals"]'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210416 18:52:50.925" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210416 18:52:50.393" endtime="20210416 18:52:50.925"/>
+<msg timestamp="20210419 11:52:36.195" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210419 11:52:35.831" endtime="20210419 11:52:36.195"/>
 </kw>
-<msg timestamp="20210416 18:52:50.933" level="FAIL">WebDriverException: Message: unknown error: Element &lt;a class="nav-link" data-test-id="nav-item-deals-link" href="/deals"&gt;...&lt;/a&gt; is not clickable at point (301, 30). Other element would receive the click: &lt;div class="whiteout-ui" data-test-id="create-deal-modal-set-details" style="position: fixed; inset: 0px; z-index: 9998; display: flex; flex-direction: column; padding: 40px 40px 60px; background: rgb(255, 255, 255); overflow: hidden;"&gt;...&lt;/div&gt;
+<msg timestamp="20210419 11:52:36.242" level="FAIL">WebDriverException: Message: unknown error: Element &lt;a class="nav-link" data-test-id="nav-item-deals-link" href="/deals"&gt;...&lt;/a&gt; is not clickable at point (301, 30). Other element would receive the click: &lt;div class="whiteout-ui" data-test-id="create-deal-modal-set-details" style="position: fixed; inset: 0px; z-index: 9998; display: flex; flex-direction: column; padding: 40px 40px 60px; background: rgb(255, 255, 255); overflow: hidden;"&gt;...&lt;/div&gt;
   (Session info: chrome=89.0.4389.128)
   (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.19042 x86_64)
 </msg>
-<status status="FAIL" starttime="20210416 18:52:49.827" endtime="20210416 18:52:50.933"/>
+<status status="FAIL" starttime="20210419 11:52:35.781" endtime="20210419 11:52:36.242"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${dealsTitle_X}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20210416 18:52:50.933" endtime="20210416 18:52:50.934"/>
+<status status="NOT RUN" starttime="20210419 11:52:36.242" endtime="20210419 11:52:36.242"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>${dealList_X}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20210416 18:52:50.934" endtime="20210416 18:52:50.934"/>
+<status status="NOT RUN" starttime="20210419 11:52:36.242" endtime="20210419 11:52:36.242"/>
 </kw>
-<status status="FAIL" starttime="20210416 18:52:49.826" endtime="20210416 18:52:50.934"/>
+<status status="FAIL" starttime="20210419 11:52:35.780" endtime="20210419 11:52:36.242"/>
 </kw>
 <kw name="And I have opened a deal" library="HomePageKeywords">
-<status status="NOT RUN" starttime="20210416 18:52:50.968" endtime="20210416 18:52:50.968"/>
+<status status="NOT RUN" starttime="20210419 11:52:36.242" endtime="20210419 11:52:36.242"/>
 </kw>
 <kw name="When I am deleting deal" library="DealSettingsKeywords">
-<status status="NOT RUN" starttime="20210416 18:52:50.985" endtime="20210416 18:52:50.985"/>
+<status status="NOT RUN" starttime="20210419 11:52:36.242" endtime="20210419 11:52:36.242"/>
 </kw>
-<status status="FAIL" starttime="20210416 18:52:49.825" endtime="20210416 18:52:50.988">WebDriverException: Message: unknown error: Element &lt;a class="nav-link" data-test-id="nav-item-deals-link" href="/deals"&gt;...&lt;/a&gt; is not clickable at point (301, 30). Other element would receive the click: &lt;div class="whiteout-ui" data-test-id="create-deal-modal-set-details" style="position: fixed; inset: 0px; z-index: 9998; display: flex; flex-direction: column; padding: 40px 40px 60px; background: rgb(255, 255, 255); overflow: hidden;"&gt;...&lt;/div&gt;
+<status status="FAIL" starttime="20210419 11:52:35.779" endtime="20210419 11:52:36.242">WebDriverException: Message: unknown error: Element &lt;a class="nav-link" data-test-id="nav-item-deals-link" href="/deals"&gt;...&lt;/a&gt; is not clickable at point (301, 30). Other element would receive the click: &lt;div class="whiteout-ui" data-test-id="create-deal-modal-set-details" style="position: fixed; inset: 0px; z-index: 9998; display: flex; flex-direction: column; padding: 40px 40px 60px; background: rgb(255, 255, 255); overflow: hidden;"&gt;...&lt;/div&gt;
   (Session info: chrome=89.0.4389.128)
   (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.19042 x86_64)
 </status>
 </test>
-<status status="FAIL" starttime="20210416 18:52:14.445" endtime="20210416 18:52:50.995"/>
+<status status="FAIL" starttime="20210419 11:52:07.916" endtime="20210419 11:52:36.242"/>
 </suite>
 <statistics>
 <total>
@@ -254,7 +254,7 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20210416 18:52:15.180" level="ERROR">Error in file 'C:\Users\LENOVO\PycharmProjects\Rb repository\rbpract1\Keywords\HomePageKeywords.robot' on line 3: Importing library 'Selenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library'
+<msg timestamp="20210419 11:52:08.369" level="ERROR">Error in file 'C:\Users\LENOVO\PycharmProjects\Rb repository\rbpract1\Keywords\HomePageKeywords.robot' on line 3: Importing library 'Selenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library'
 Traceback (most recent call last):
   None
 PYTHONPATH:
@@ -265,7 +265,7 @@ PYTHONPATH:
   C:\Users\LENOVO\AppData\Local\Programs\Python\Python39
   c:\users\lenovo\pycharmprojects\pythonproject\venv
   c:\users\lenovo\pycharmprojects\pythonproject\venv\lib\site-packages</msg>
-<msg timestamp="20210416 18:52:15.308" level="ERROR">Error in file 'C:\Users\LENOVO\PycharmProjects\Rb repository\rbpract1\Keywords\CreateDealKeywords.robot' on line 3: Importing library 'Selenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library'
+<msg timestamp="20210419 11:52:08.400" level="ERROR">Error in file 'C:\Users\LENOVO\PycharmProjects\Rb repository\rbpract1\Keywords\CreateDealKeywords.robot' on line 3: Importing library 'Selenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library'
 Traceback (most recent call last):
   None
 PYTHONPATH:
@@ -276,8 +276,8 @@ PYTHONPATH:
   C:\Users\LENOVO\AppData\Local\Programs\Python\Python39
   c:\users\lenovo\pycharmprojects\pythonproject\venv
   c:\users\lenovo\pycharmprojects\pythonproject\venv\lib\site-packages</msg>
-<msg timestamp="20210416 18:52:15.364" level="WARN">Imported library 'C:\Users\LENOVO\PycharmProjects\Rb repository\rbpract1\Locators\CreateDealLocators.py' contains no keywords.</msg>
-<msg timestamp="20210416 18:52:15.428" level="ERROR">Error in file 'C:\Users\LENOVO\PycharmProjects\Rb repository\rbpract1\Keywords\DealSettingsKeywords.robot' on line 3: Importing library 'Selenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library'
+<msg timestamp="20210419 11:52:08.416" level="WARN">Imported library 'C:\Users\LENOVO\PycharmProjects\Rb repository\rbpract1\Locators\CreateDealLocators.py' contains no keywords.</msg>
+<msg timestamp="20210419 11:52:08.416" level="ERROR">Error in file 'C:\Users\LENOVO\PycharmProjects\Rb repository\rbpract1\Keywords\DealSettingsKeywords.robot' on line 3: Importing library 'Selenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library'
 Traceback (most recent call last):
   None
 PYTHONPATH:
@@ -288,6 +288,6 @@ PYTHONPATH:
   C:\Users\LENOVO\AppData\Local\Programs\Python\Python39
   c:\users\lenovo\pycharmprojects\pythonproject\venv
   c:\users\lenovo\pycharmprojects\pythonproject\venv\lib\site-packages</msg>
-<msg timestamp="20210416 18:52:15.572" level="WARN">Imported library 'C:\Users\LENOVO\PycharmProjects\Rb repository\rbpract1\Locators\DealSettingsLocators.py' contains no keywords.</msg>
+<msg timestamp="20210419 11:52:08.431" level="WARN">Imported library 'C:\Users\LENOVO\PycharmProjects\Rb repository\rbpract1\Locators\DealSettingsLocators.py' contains no keywords.</msg>
 </errors>
 </robot>

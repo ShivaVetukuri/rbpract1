@@ -1,5 +1,4 @@
 *** Settings ***
-Library  SeleniumLibrary
 Library  Selenium2Library
 Library  String
 Variables    ../Variables/DataForLitera.py
@@ -9,6 +8,7 @@ Variables    ../Locators/CreateDealLocators.py
 *** Keywords ***
 
 Before Suite
+
     Open Browser    ${URL}   ${Browser}
     Maximize Browser Window
     Set Browser Implicit Wait    ${wait}
